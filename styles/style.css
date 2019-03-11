@@ -57,7 +57,11 @@ header .menu li a {
     position: relative;
     top: -2px;
 } 
-.top-line hr{
+.top-line>hr {
+    color: #e4e9eb;
+    border-color: #e4e9eb;
+    background-color: #e4e9eb;
+    height: 1px;
     margin: 0px -1.7%;
     position: relative;
     left: 4.7%;
@@ -66,13 +70,10 @@ header .menu li a {
     display: inline-block;
 }
 .top-line hr + hr{
-    margin: 0px -1.7%;
-    position: relative;
-    left: 4.7%;
-    top: -2px;
-    width: 21.7%;
-    display: inline-block;
-}
+    margin: 0px -1.7%; 
+    left: 21.3%;
+    width: 40.2%;
+} 
 main .hexagone-container {
     background: #fff;
     height: 721px;
@@ -131,6 +132,32 @@ main .hexagone-container  .hex-line3{
 main .hexagone-container  .hex-line3 img{
     margin-right: 1.6%;
 }
+main .hexagone-container  .square-link {
+    position: relative;
+    top: 6.7%;
+    left: 3%;
+}
+main .hexagone-container  .square-link div{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ddd2c5;
+    margin-right: -1px;
+}
+main .hexagone-container  .square-link div.selected {
+    background-color: #8b8784;
+}
+.bottom-line hr {
+    color: #e4e9eb;
+    border-color: #e4e9eb;
+    background-color: #e4e9eb;
+    height: 1px;
+    position: relative;
+    left: 3.1%;
+    top: 39px;
+    width: 94.1%;
+    display: inline-block;
+}
 main .info {
     margin-left: auto;
     margin-right: auto;
@@ -140,27 +167,33 @@ main .info {
 }
 main .info img {
     float: left;
+    position: relative;
+    left: 2.4%;
+    margin-top: 6.5%;
 }
 main .info article {
-    top: 20%;
-    left: 11.8%;
+    top: 4%;
+    height: 92.2%;
+    left: 9.8%;
     position: relative;
-    width: 800px;
+    width: 80.5%;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
 }
 main .info #about {
-    margin-left: 180px;
+    margin-left: 24.3%;
     padding-left: 20px;
-    padding-top: 0;
+    padding-top: 47px;
     position: relative;
-    top: -6px;
-    width: 615px;
+    width: 76%;
+    text-align: left;
 }
 
 main .info #socials {
     display: inline-block;
     position: relative;
     top: 27px;
-    left: 453px;
+    left: 57.3%;
 }
 main .info h1{
     font-family: 'Maven Pro', sans-serif;
@@ -191,9 +224,20 @@ main .in-touch-form {
     padding-left: 11.8%;
     color: #bebebe;
 }
-main .in-touch-form form{
-    display: block;
+main .in-touch-form .border {
+    position: relative;
+    top: -9.3%;
+    left: -10%;
+    height: 107.1%;
+    width: 106.5%;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+}
+main .in-touch-form form {
+    position: relative;
     float: left;
+    top: 8.6%;
+    left: 9.4%;
 }
 main .in-touch-form legend{
     font-family: 'Maven Pro', sans-serif;
@@ -246,12 +290,12 @@ aside.contact-information {
     width: 220px; 
     font-family: 'Lato', sans-serif;
     font-size: 0.75em;
-    padding-top: 7.2%;
-    padding-left: 2.2%;
-    line-height: 2.3em;
+    padding-top: 11.6%;
+    padding-left: 11.4%;
+    line-height: 1.9em;
 }
-aside.contact-information p :first-child {
-    font-family: 'Lato', sans-serif;
+}
+aside.contact-information p>span {
     font-weight: bold;
 }
 .contacts .local{
