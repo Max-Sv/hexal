@@ -41,6 +41,9 @@ header .menu li a {
     color: #fff;
     word-spacing: 0px;
 }
+header .menu li a:hover {
+    color: #2eb398
+}
 
 .logo-header {
     top: 24px;
@@ -194,6 +197,12 @@ main .info #socials {
     position: relative;
     top: 27px;
     left: 57.3%;
+    transition: all 0.5s ease;
+}
+
+#socials a img:hover {
+    z-index: 500;
+    transform: rotate(-20deg);
 }
 main .info h1{
     font-family: 'Maven Pro', sans-serif;
@@ -260,8 +269,15 @@ main .in-touch-form form input {
     margin-bottom: 16px;
     font-family: 'Lato', sans-serif;
     font-size: 0.7em;
+    font-weight: bold;
+    padding-left: 3px;
 }
-
+main .in-touch-form form input::-webkit-input-placeholder { 
+    color:#bebebe; 
+}
+main .in-touch-form form input::-moz-placeholder { 
+    color:#bebebe; 
+}
 #message {
     width: 580px;
     height: 150px;
@@ -270,6 +286,14 @@ main .in-touch-form form input {
     font-family: 'Lato', sans-serif;
     font-size: 0.7em;
     resize: none;
+    padding-top: 13px;
+    font-weight: bold;
+}
+#message::-webkit-input-placeholder { 
+    color:#bebebe; 
+}
+#message::-moz-placeholder { 
+    color:#bebebe; 
 }
 button.button-submit {
     height: 37px;
@@ -285,21 +309,24 @@ button.button-submit {
     margin-top: 2.2%;
 
 }
-aside.contact-information {
+aside.contact-information{
     display: inline-block;
-    width: 220px; 
+    width: 291px;
     font-family: 'Lato', sans-serif;
     font-size: 0.75em;
-    padding-top: 11.6%;
+    padding-top: 11.8%;
     padding-left: 11.4%;
     line-height: 1.9em;
+    text-align: justify;
+
 }
-}
-aside.contact-information p>span {
+aside.contact-information span{
     font-weight: bold;
 }
+
+
 .contacts .local{
-    padding-top: 44%;
+    padding-top: 18%;
     padding-left: 1.5%;
     
 }
@@ -311,8 +338,7 @@ aside.contact-information p>span {
     top: -1.5px;
 }
 .contacts .phone{
-    padding-top: 3%;
-    padding-left: 1.5%;
+    padding-left: 1%;
 }
 .contacts .phone span{
     font-family: 'Lato', sans-serif;
@@ -323,8 +349,7 @@ aside.contact-information p>span {
 }
 
 .contacts .email{  
-    padding-top: 2.5%;
-    padding-left: 0.5%;
+    margin-top: -2px;
 }
 .contacts .email span{
     font-family: 'Lato', sans-serif;
